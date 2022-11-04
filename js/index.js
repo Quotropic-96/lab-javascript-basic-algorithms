@@ -1,8 +1,8 @@
 
 // Iteration 1: Names and Input
 console.log('Iteration 1:');
-const hacker1 = 'Aaag';
-const hacker2 = 'Aaagc';
+const hacker1 = 'Gerard';
+const hacker2 = 'Pair';
 const nameProgrammers = function (driver, navigator) {
     console.log(`The driver's name is ${driver}`);
     console.log(`The navigator's name is ${navigator}`);
@@ -103,7 +103,7 @@ console.log(numberOfWords(lorem3Par));
 console.log(numberOfCharacters('et', lorem3Par));
 
 /* Bonus 2 */
-console.log('Bonus 2:')
+console.log('Bonus 2:');
 const phraseToCheck = `A man, a plan, a canal, Panama!`;
 function cleanString (fullString) {
     let cleanedString = '';
@@ -114,7 +114,6 @@ function cleanString (fullString) {
     }
     return cleanedString;
 }
-console.log(`Clean string: ${cleanString(phraseToCheck)}`);
 function isPalindrome (string) {
     string = cleanString(string);
     for (let i = 0; i <= Math.ceil(string.length/2); i++) {
