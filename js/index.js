@@ -1,4 +1,6 @@
+
 // Iteration 1: Names and Input
+console.log('Iteration 1:');
 const hacker1 = 'Aaag';
 const hacker2 = 'Aaagc';
 const nameProgrammers = function (driver, navigator) {
@@ -8,6 +10,7 @@ const nameProgrammers = function (driver, navigator) {
 nameProgrammers(hacker1, hacker2);
 
 // Iteration 2: Conditionals
+console.log('Iteration 2:');
 const compareProgrammersNameLength = (driver, navigator) => {
     if (driver.length > navigator.length) {
         console.log(`Driver has the longest name, it has ${driver.length} characters`);
@@ -20,6 +23,7 @@ const compareProgrammersNameLength = (driver, navigator) => {
 compareProgrammersNameLength(hacker1, hacker2);
 
 // Iteration 3: Loops
+console.log('Iteration 3:');
 function capitalizeName (nameStr) {
     let capitalizedName = '';
     for (const letter of nameStr) {
@@ -85,3 +89,15 @@ function outputResult (driver, navigator) {
     }
 }
 outputResult(hacker1, hacker2);
+
+/* Bonus 1 */
+console.log('Bonus 1:');
+const lorem3Par = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet euismod ipsum. Etiam sagittis ex sem, a eleifend neque pharetra ut. Donec a condimentum lorem, vitae pulvinar tellus. Praesent sit amet aliquet turpis. Ut iaculis fringilla ipsum, ac pretium orci. Aliquam vitae massa ut mauris hendrerit porttitor et id felis. Morbi non bibendum erat, a maximus lorem. Nunc arcu libero, auctor sed consequat sed, maximus at risus. Phasellus lectus odio, luctus at tristique eu, tincidunt nec ex. Vivamus vulputate lacus vel massa imperdiet dapibus. Vivamus ullamcorper tellus turpis, eu ultricies eros vestibulum vitae. Fusce mollis volutpat sem, ut posuere magna imperdiet pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam a ante auctor, faucibus ligula a, pulvinar lorem. Vivamus dapibus dignissim placerat. Vestibulum laoreet dolor ut leo maximus, quis commodo lorem viverra. In eu leo id turpis viverra dignissim. Curabitur non eleifend turpis, id feugiat augue. Suspendisse sodales convallis turpis ut rhoncus. Cras in dapibus neque. Aenean ac dapibus dui. Nulla nec placerat nunc, vitae volutpat ipsum. Quisque elit nunc, rutrum sit amet porttitor sed, vulputate vitae ipsum. Ut auctor augue nec nisi venenatis, vitae lacinia neque ultrices.';
+const numberOfWords = function (str) {
+    return str.split(' ').length;
+}
+const numberOfCharacters = (character, str) => {
+    return str.split(character).length - 1;
+}
+console.log(numberOfWords(lorem3Par));
+console.log(numberOfCharacters('et', lorem3Par));
