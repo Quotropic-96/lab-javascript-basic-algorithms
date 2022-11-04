@@ -101,3 +101,27 @@ const numberOfCharacters = (character, str) => {
 }
 console.log(numberOfWords(lorem3Par));
 console.log(numberOfCharacters('et', lorem3Par));
+
+/* Bonus 2 */
+console.log('Bonus 2:')
+const phraseToCheck = `A man, a plan, a canal, Panama!`;
+function cleanString (fullString) {
+    let cleanedString = '';
+    for (letter of fullString) {
+        if (letter != ' ' && letter != '"' && letter != "'" && letter != '!' && letter != '?' && letter != ',' && letter != '.') {
+            cleanedString += letter.toLowerCase();
+        }
+    }
+    return cleanedString;
+}
+console.log(`Clean string: ${cleanString(phraseToCheck)}`);
+function isPalindrome (string) {
+    string = cleanString(string);
+    for (let i = 0; i <= Math.ceil(string.length/2); i++) {
+        if (string[i] != string[string.length - i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPalindrome(phraseToCheck));
