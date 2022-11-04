@@ -5,15 +5,20 @@ const nameProgrammers = function (driver, navigator) {
     console.log(`The driver's name is ${driver}`);
     console.log(`The navigator's name is ${navigator}`);
 }
+nameProgrammers(hacker1, hacker2);
 
 // Iteration 2: Conditionals
-if (hacker1.length > hacker2.length) {
-    console.log(`Driver has the longest name, it has ${hacker1.length} characters`);
-} else if (hacker2.length > hacker1.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters`);
-} else {
-    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+const compareProgrammersNameLength = (driver, navigator) => {
+    if (driver.length > navigator.length) {
+        console.log(`Driver has the longest name, it has ${driver.length} characters`);
+    } else if (navigator.length > driver.length) {
+        console.log(`It seems that the navigator has the longest name, it has ${navigator.length} characters`);
+    } else {
+        console.log(`Wow, you both have equally long names, ${driver.length} characters!`)
+    }
 }
+compareProgrammersNameLength(hacker1, hacker2);
+
 // Iteration 3: Loops
 let capitalizedName = '';
 for (const letter of hacker1) {
